@@ -1,0 +1,176 @@
+/*My color scheme throughout the website is dark red, white and dark brown which is the color of a pizza, i want it to represent that way*/
+    body{
+        margin:0;
+        padding:0;
+        background-color:#FFFFFF;
+        color: #451400;
+        font-family: Arial,sans-serif;
+        padding-top: 80px;
+    }
+    header{
+        background-color:#A81612;
+        padding: 1rem;
+        color:#FFFFFF;
+        position: fixed;
+        width: 100%;
+        top:0;
+        z-index: 1000;
+    }
+    .navlogo{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        height:60px;
+        margin:auto;
+        padding:0 1rem;
+    }
+    .logo{
+        height: 60px; 
+    }
+
+    nav ul{
+        padding:0;
+        margin: 0;
+        gap:1rem;
+        display: flex;
+        list-style: none;
+    }
+    nav ul li a{
+        color: #FFFFFF;
+        font-weight: bold;
+        text-decoration: none;
+        transition: color 0.3s ease, border 0.3s ease;
+        padding: 0.25rem 0.5rem;
+        border: 2px solid transparent; /* Invisible by default */
+        border-radius: 4px;
+    }
+    nav ul li a:hover{
+        color: #451400;
+        background-color: #FFFFFF;
+        border: 2px bold ;
+    }
+    nav ul li a:hover::after{
+        transform: scaleX(1);
+    }
+    .nav-deals{
+        color:#FFFFFF;
+        margin-right:1rem;
+        font-weight: bold;
+        transition: 0.3s;
+        transform: translate(-300px);
+    }
+    .nav-deals :hover{
+        color:#FFFFFF;
+    }
+    .Video{
+        height: 85vh;
+        overflow:hidden;
+        position:relative;
+    }
+    .Background-Video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    .Video-text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .Video-text h1{
+        font-size:3rem;
+    }
+    .Pizza{
+        background-color: #A81612;
+        color:#FFFFFF;
+        margin-top: 1rem;
+        display:inline-block;
+        border-radius: 5px;
+        padding:0.75rem 1.5rem;
+        font-weight: bold;
+    }
+    .Pizza:hover{
+        color:#451400;
+        text-decoration: underline;
+    }
+    .menu{
+        padding:2rem;
+        text-align: center;
+        background-color: #FFFFFF;
+    }
+    .menu-dark{
+        padding: 2rem;
+        background-color: #451400;
+        color:#FFFFFF;
+    }
+    .Pizza-grid,.card,.Deal{
+        margin:1rem;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .Pizza-grid,.card,.Deal{
+        
+    }
+    footer.footer{
+        background-color: #451400;
+        display:flex;
+        color:#FFFFFF;
+        flex-wrap: wrap;
+        padding:2rem;
+        justify-content: space-around;
+    }
+    .footer-links{
+        margin: 1rem;
+    }
+    .footer-links a{
+        color:#FFFFFF;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    .footer-links.social.med a img {
+    width: 24px;
+    height: 24px;
+    margin: 0 0.25rem;
+}
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+    .rewards{
+        display: flex;
+        position: relative;
+        height:90vh;
+        background-image: url(Images/Pizzarewards.jpg);
+        background-size: contain;
+        align-items:center;
+        justify-content: center;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .Points{
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax (150px,1fr));
+        gap:2rem;
+        padding: 3rem, 2rem;
+        text-align: center;
+        background-color:#fff3f2;
+    }
+    .hutpoints{
+        color:#A81612;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    } h3+
