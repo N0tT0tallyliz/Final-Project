@@ -115,7 +115,12 @@
         font-weight: bold;
         font-size: 18px;
     }
-    .Pizza-grid,.card,.Deal{
+    .Pizza-grid p,
+.card p,
+.Deal p{position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
         
     }
     footer.footer{
