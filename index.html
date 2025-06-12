@@ -45,6 +45,7 @@
             <div class="Pizza">
                <p>Pepperoni</p>
                <img src="Images/PEP.jpg" alt="a large delicious Pizza with Pepperoni that looks so pleasing">
+            </div>
             <div class="Pizza">Veggie</div>
             <img src="Images/Veggie.jpg" alt=" Has Sliced mushrooms, green pepper, red onion, tomatoes.">
             <div class="Pizza">Cheese Lovers</div>
@@ -71,30 +72,36 @@
             </div>
         </div>
             </section>
+            <h2>🍕 Build Your Own Pizza</h2>
             <div class="build-pizza">
-                <img src="Images/" class="pizza-base" alt="Plain pizza">
-               <img src="Images/lettuce.png" class="topping lettuce" alt="Lettuce topping">
-               <img src="Images/cheese.png" class="topping cheese" alt="Cheese topping">
+                <img src="Images/plainpiz" class="pizza-base" alt="Plain pizza">
+               <img src="Images/lettuce.png" class="topping lettuce"   alt="Lettuce">
+               <img src="Images/cheese.png" class="topping cheese"     alt="Cheese schreeded">
+                <img src="Images/tomatoes.png" class="topping tomatoes" alt="Slices of tomatoes">
+                <img src="Images/pepperoni.png" class="topping pepperoni" alt="slices of pepperoni">
+                <img src="Images/mushroom.png" class="topping mushroom" alt="Slices of mushrooms">
             </div>
-               <h2>🍕 Build Your Own Pizza</h2>
-             <button onclick="addTopping('Lettuce')">Lettuce</button>
-             <button onclick="addTopping('Tomato')">Tomato</button>
-              <button onclick="addTopping('Pepperoni')">Pepperoni</button>
-              <button onclick="addTopping('Cheese')">Cheese</button>
-       </div>
+            <label><input type="checkbox" id="toggle-lettuce"> Lettuce</label>
+            <label><input type="checkbox" id="toggle-cheese"> Cheese</label>
+            <label><input type="checkbox" id="toggle-tomatoes">Tomatoes</label>
+            <label><input type="checkbox" id="toggle-pepperoni"> Pepperoni</label>
+            <label><input type="checkbox" id="toggle-mushroom">MushRoom</label>
        <div class="pizza-area">
     <img src="Images/pizza-base.png" class="pizza-base" alt="Base Pizza">
     <div id="toppings-container"></div>
   </div>
      </section>
       <script>
-  function addTopping(topping) {
-    const list = document.getElementById("topping-list");
-    const item = document.createElement("li");
-    item.textContent = topping;
-    list.appendChild(item);
-  }
-</script>
+         const toppings = ['lettuce', 'cheese', 'tomatoes', 'pepperoni', 'mushroom'];
+
+         toppings.forEach(topping => {
+          const checkbox = document.getElementById(`toggle-${topping}`);
+           const toppingEl = document.querySelector(`.${topping}`);
+         checkbox.addEventListener('change', function () {
+             toppingEl.style.display = this.checked ? 'block' : 'none';
+        });
+        });
+   </script>
             <footer class="footer">
                 <div class="footer-box">
                     <div class="footer-links">
@@ -108,7 +115,7 @@
                         <a href="https://www.instagram.com/pizzahut/"><img src="Images/instagram.png" alt="Instagram, a gradient color of purple,blue,pink,orange,yellow box"></a>
                         <a href="https://x.com/PizzaHutCanada?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="Images/twitter.png" alt="Twitter,A bird in the middle with a blue background"></a>
                 </div>
-                    </div>
+                </div>
             </footer>
-</body>
-</html>
+    </body>
+   </html>
