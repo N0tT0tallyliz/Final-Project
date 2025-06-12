@@ -330,3 +330,54 @@
             padding: 0 15px;
         }
     }
+.nutrit{
+  background-image: url("Images/");
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 2rem;
+}
+
+.nutrition-text h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.nutrition-text p {
+  font-size: 1.5rem;
+}
+
+.nutrition-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 3rem;
+  background-color: #fff3f2;
+  text-align: center;
+}
+
+.nutri-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.nutri-card:hover {
+  transform: translateY(-5px);
+}
+.nutri-card img {
+  width: 120px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+.nutri-card h2 {
+  color: #A81612;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
