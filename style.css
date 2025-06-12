@@ -222,9 +222,11 @@
         width:90%;
         text-align: center;
         padding:2rem;
+        padding:3rem;
         border-radius:10px;
         max-width: 400px;
         box-shadow: #A81612;
+        box-sizing:border-box;
     }
     .logs-body input{
        display: block;
@@ -233,6 +235,7 @@
        margin:1rem 0;
        padding:1rem;
        border:1px solid #cccccc;
+       box-sizing:border-box;
     }
     .logs-body button{
        background-color: #A81612;
@@ -249,7 +252,13 @@
     #account{
         margin-top: 0.5rem;
         font-size:18px;
+        font-weight:bold;
+        text-decoration:none;
+        color: #A81612;
     }
+   #account a:hover {
+    text-decoration: underline;
+   }
     .Points{
         max-width: 900px;
         display:grid;
