@@ -10,8 +10,8 @@
 <body>
     <header>
         <div class="navlogo" >
-        <img src="Images/pizzahut.png"  alt=" A pizza logo with a red and white background with a white hat in the middle" <a href="index.html"
-        class="logo">
+             <a href="index.html" class="logo">
+        <img src="Images/pizzahut.png"  alt=" A pizza logo with a red and white background with a white hat in the middle">
             </a>
         <a href="deals.html" class="nav-deals">DEALS</a>
         <nav>
@@ -72,6 +72,27 @@
             </div>
         </div>
             </section>
+            <section class="build-pizza">
+               <h2>🍕 Build Your Own Pizza</h2>
+                  <div class="toppings">
+             <button onclick="addTopping('Lettuce')">Lettuce</button>
+             <button onclick="addTopping('Tomato')">Tomato</button>
+              <button onclick="addTopping('Pepperoni')">Pepperoni</button>
+              <button onclick="addTopping('Cheese')">Cheese</button>
+       </div>
+       <div id="pizza-display">
+          <h3>Your Pizza:</h3>
+       <ul id="topping-list"></ul>
+        </div>
+      </section>
+      <script>
+  function addTopping(topping) {
+    const list = document.getElementById("topping-list");
+    const item = document.createElement("li");
+    item.textContent = topping;
+    list.appendChild(item);
+  }
+</script>
             <footer class="footer">
                 <div class="footer-box">
                     <div class="footer-links">
