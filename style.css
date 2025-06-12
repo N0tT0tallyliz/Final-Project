@@ -295,6 +295,21 @@
     border-radius: 50%;
     font-weight: bold;
  }
+.rewardsheading {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  color: #A81612;
+}
+.rewardsheading h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.rewardsheading span {
+  color: #A81612;
+}
     .Points{
         max-width: 900px;
         display:grid;
