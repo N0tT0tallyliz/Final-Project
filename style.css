@@ -54,16 +54,6 @@
     nav ul li a:hover::after{
         transform: scaleX(1);
     }
-    .nav-deals{
-        color:#FFFFFF;
-        margin-right:1rem;
-        font-weight: bold;
-        transition: 0.3s;
-        transform: translate(-300px);
-    }
-    .nav-deals :hover{
-        color:#FFFFFF;
-    }
     .Video{
         height: 85vh;
         overflow:hidden;
