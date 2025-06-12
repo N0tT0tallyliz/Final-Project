@@ -366,11 +366,9 @@
             padding: 0 15px;
         }
     }
-.nutrit{
-  background-image: url("Images/nutrition.jpg");
+.nutrit {
+  background: url("Images/nutrition.jpg") center/cover no-repeat;
   height: 90vh;
-  background-size: cover;
-  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -378,44 +376,59 @@
   color: #fff;
   padding: 2rem;
 }
-
-.nutrition-text h1 {
-  font-size: 4rem;
+.nutrition h1 {
+  font-size: 3rem;
   font-weight: bold;
-  margin-bottom: 1rem;
 }
-.nutrition-text p {
-  font-size: 1.5rem;
+.nutrition p {
+  font-size: 1.2rem;
 }
-
-.nutrition-info {
+.nutritsec {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  padding: 3rem;
-  background-color: #fff3f2;
+  padding: 2rem;
+  background: #fff3f2;
   text-align: center;
 }
-
-.nutri-card {
-  background-color: #fff;
+.nutritdiv, .nutrition {
+  background: #fff;
   padding: 1.5rem;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
 }
-.nutri-card:hover {
+.nutritdiv:hover, .nutrition:hover {
   transform: translateY(-5px);
 }
-.nutri-card img {
+.nutritdiv img, .nutrition img {
   width: 120px;
-  height: auto;
   margin-bottom: 1rem;
 }
-.nutri-card h2 {
+.nutritdiv h2, .nutrition h2 {
   color: #A81612;
   font-size: 1.2rem;
+}
+.nutrit-cal {
+  margin-top: 1rem;
+}
+.calories {
+  font-weight: bold;
+  color: #A81612;
   margin-bottom: 0.5rem;
+}
+.diet {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+.diet div p {
+  margin: 0;
+  font-weight: bold;
+}
+.diet div span {
+  font-size: 0.85rem;
+  color: #555;
 }
 cart-icon {
   position: relative;
