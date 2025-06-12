@@ -26,10 +26,11 @@
         margin:auto;
         padding:0 1rem;
     }
-    .logo{
-        height: 60px; 
-    }
-
+    .navlogo .logo img {
+       width: 120px;  /* or smaller, e.g. 100px */
+       height: auto;  /* keep aspect ratio */
+       display: block;
+   }
     nav ul{
         padding:0;
         margin: 0;
