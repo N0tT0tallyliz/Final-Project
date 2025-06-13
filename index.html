@@ -22,7 +22,7 @@
                 <li><a href="signup.html">SIGN/JOIN</a></li>
                  <a href="cart.html" class="cart-icon">
                  <i class="fas fa-shopping-cart"></i>
-                 <span class="cart-no">2</span>
+                 <span class="cart-count">0</span>
                  </a>
             </li>
             </ul>
@@ -108,7 +108,6 @@
      </section>
       <script>
          const toppings = ['lettuce', 'cheese', 'tomatoes', 'pepperoni', 'mushroom'];
-
          toppings.forEach(topping => {
           const checkbox = document.getElementById(`toggle-${topping}`);
            const toppingEl = document.querySelector(`.${topping}`);
@@ -133,4 +132,15 @@
                 </div>
             </footer>
     </body>
+    <script>
+    let cartCount = 0;
+    const cartCountDisplay = document.querySelector('.cart-count');
+    const pizzaItems = document.querySelectorAll('.Pizza');
+    pizzaItems.forEach(pizza => {
+    pizza.addEventListener('click', () => {
+    cartCount++;
+    cartCountDisplay.textContent = cartCount;
+    });
+  });
+</script>
    </html>
