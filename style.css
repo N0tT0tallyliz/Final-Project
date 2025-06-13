@@ -481,7 +481,6 @@ cart-icon {
   max-width: 350px;
   margin: 0 auto;
 }
-
 .build-pizza h2 {
   font-size: 1.8rem;
   color: #A81612;
@@ -493,7 +492,7 @@ cart-icon {
   height: 300px;
   margin: 0 auto 20px;
 }
-.pizza-base {
+.pizzaplain {
   width: 100%;
   height: auto;
   display: block;
