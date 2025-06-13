@@ -4,31 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
+    <!-- Link to external stylesheet -->
     <link rel="stylesheet" href="style.css">
+     <!-- Font Awesome for icons like the cart -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+      <!-- Header with logo and navigation -->
     <header>
         <div class="navlogo" >
+              <!-- Logo that links back to home -->
              <a href="index.html" class="logo">
         <img src="Images/pizzahut.png"  alt=" A pizza logo with a red and white background with a white hat in the middle">
             </a>
+             <!-- Navigation bar -->
         <nav>
             <ul>
+                   <!-- Links to other pages -->
                 <li><a href=" index.html">HOME</a></li>
                 <li><a href="OurRewards.html">REWARDS</a></li>
                 <li><a href="Values.html">OUR VALUES</a></li>
                 <li><a href="nutrition.html">NUTRITION</a></li>
                 <li><a href="signup.html">SIGN/JOIN</a></li>
+                <li>
+                    <!-- Cart icon with number -->
                  <a href="cart.html" class="cart-icon">
                  <i class="fas fa-shopping-cart"></i>
-                 <span class="cart-count">0</span>
+                 <span class="cart-count">0</span><!--The count for when the types of pizza is pressed -->
                  </a>
             </li>
             </ul>
         </nav>
         </div>
     </header>
+    <!--Got the vid from pexels and muted the sound, made it repeat,on phones so it could be playing in the webpage-->
     <section class="Video">
         <video class="Background-Video" autoplay muted loop playsinline>
             <source src="VIDS/3752508-hd_1920_1080_24fps.mp4"type="video/mp4">
@@ -63,16 +72,17 @@
               <img src="Images/Maet.jpg" alt="Pepperoni,ham, bacon and pizza mozzarella looking well hot and nice">
         </div>
         </section>
+    <!-- Crowd Pleasers and Featured Pizza section -->
             <section class="menu-dark">
                 <h2>Crowd Pleasers</h2>
                 <div class="pizza-grid">
                 <div class="card">
                    <p>Big New Yorker</p>
-                <img src="Images/newyorkpiz.jpg">
+                <img src="Images/newyorkpiz.jpg"> alt="A box full of newyork pizzas">
                 </div>
                 <div class="card">
                    <p> Triple Treat Box</p>
-                <img src="Images/bospiz.jpg">
+                <img src="Images/bospiz.jpg"> alt="The triple boxes of pizza">
                 </div>
                 </div>
             <h2>Featured Pizza</h2>
@@ -91,6 +101,7 @@
                 </div>
                 </div>
             </section>
+              <!--A section of interactivity for the users:A pizza builder-->
             <h2>🍕 Build Your Own Pizza</h2>
             <div class="pizza-area">
                 <img src="Images/plainpiz.png" class="pizza-base" alt="Plain pizza">
@@ -100,6 +111,7 @@
                 <img src="Images/pepperoni.png" class="topping pepperoni" alt="slices of pepperoni">
                 <img src="Images/mushroom.png" class="topping mushroom" alt="Slices of mushrooms">
             </div>
+    <!-- Checkboxes for the toppings -->
        <div id="toppings-container">
             <label><input type="checkbox" id="toggle-lettuce"> Lettuce</label>
             <label><input type="checkbox" id="toggle-cheese"> Cheese</label>
@@ -108,6 +120,7 @@
             <label><input type="checkbox" id="toggle-mushroom">MushRoom</label>
   </div>
      </section>
+     <!-- Script for topping toggle functionality -->
       <script>
          const toppings = ['lettuce', 'cheese', 'tomatoes', 'pepperoni', 'mushroom'];
          toppings.forEach(topping => {
