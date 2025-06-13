@@ -86,6 +86,7 @@
       border-radius: 10px;
       padding: 1rem;
       transition: transform 0.3s ease;
+      cursor:pointer; /*To make the card clickable to show the cart count*/
     }
     .Pizza:hover{
        transform: scale(1.05);
