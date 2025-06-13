@@ -167,6 +167,13 @@
        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         transition: transform 0.3s ease;
     }
+    .cards-grid,
+   .deals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+   }
     footer.footer{
         background-color: #451400;
         display:flex;
